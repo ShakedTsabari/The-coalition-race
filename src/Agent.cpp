@@ -12,7 +12,6 @@ Agent::Agent(int agentId, int partyId, SelectionPolicy *selectionPolicy) :
         mPartyId(partyId),
         mSelectionPolicy(selectionPolicy),
         mCoalition(agentId) {
-    // You can change the implementation of the constructor, but not the signature!
 }
 
 int Agent::getId() const {
@@ -32,7 +31,6 @@ void Agent::setCoalitionClone(int coalition) {
 }
 
 void Agent::step(Simulation &sim) {
-    // TODO: implement this method
     int partyId = getPartyId();
     Graph& g = sim.getGraphNonConst();
     vector<int> agentAllNeighbors = g.getNeighbors(partyId);
