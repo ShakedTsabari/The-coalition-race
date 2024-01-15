@@ -19,7 +19,5 @@ void Coalition :: addParty(int partyToAdd, int numOfMandates)
 {
     cparties.push_back(partyToAdd);
     cmandatesSum = cmandatesSum + numOfMandates;
-    //if (cmandatesSum>=61)
-    //terminate61 =false;
 }
 
