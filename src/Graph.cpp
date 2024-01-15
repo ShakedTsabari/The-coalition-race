@@ -5,7 +5,6 @@ Graph *Graph::instance = nullptr;
 
 Graph::Graph(vector<Party> vertices, vector<vector<int>> edges) : mVertices(std::move(vertices)),
                                                                   mEdges(std::move(edges)) {
-    // You can change the implementation of the constructor, but not the signature!
     Graph::instance = this;
 }
 
